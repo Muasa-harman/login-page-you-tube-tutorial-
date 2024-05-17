@@ -1,0 +1,41 @@
+.dash{
+    flex: 0.8;
+    margin-left: 10px;
+
+    .headers{
+        flex: 1;
+
+        .sort{
+            display: flex;
+            
+        }
+    }
+
+    .cards{
+        display: flex;
+        justify-content: space-between;
+
+
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            // justify-content: space-between;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .events{
+            justify-content: space-between;
+            color: gray;
+
+            li{
+                justify-content: space-between;
+            }
+
+            .widget{
+                flex: 1 0 45%;
+            }
+        }
+
+    }
+}

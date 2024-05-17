@@ -1,0 +1,24 @@
+.widget{
+    top: 80px;
+    width: 100%;
+    border: 1px solid rgb(230,227,227);
+    flex-basis: 50%;
+    padding: 10px;
+    margin: 5px;
+
+    .color{
+        background-color: rgb(115,134,173);
+        width: 104%;
+        margin-left: cover !important;
+        margin-top: -28px;
+        z-index: 999;
+
+
+        .headers{
+           color: white;
+           text-align: center;
+           font-size: medium;
+           padding: 10px;
+        }
+    }
+}

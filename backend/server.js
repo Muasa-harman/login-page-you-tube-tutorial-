@@ -1,8 +1,8 @@
 import express from "express"
 import mongoose from "mongoose"
 import  "dotenv/config"
-import registerRoutes from "./router/user.js"
-import loginRoutes from "./router/user.js"
+import signupRoutes from "./routes/auth.js"
+import loginRoutes from "./routes/auth.js"
 
 const port = process.env.PORT
 const app = express();
@@ -17,8 +17,8 @@ try {
     
 }
 
-app.use("/api/register", registerRoutes)
-app.use("api/login", loginRoutes)
+app.use("/api/signup", signupRoutes)
+app.use("/api/login", loginRoutes)
 
 
 app.listen(port, ()=>{
